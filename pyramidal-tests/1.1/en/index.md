@@ -16,7 +16,7 @@ Its main objective is to extend the applications of [PHPUnit](https://phpunit.de
 
 ### Installing with Composer.
 
-    $ composer require --dev thenlabs/pyramidal-tests dev-master
+    $ composer require --dev thenlabs/pyramidal-tests 1.1
 
 ### Declaring extension in configuration file.
 
@@ -36,7 +36,7 @@ In the `bootstrap.php` file or equivalent include the reference to `/vendor/then
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/vendor/thenlabs/pyramidaltests/src/DSL/PHPUnit.php'; // DSL
+require_once __DIR__ . '/vendor/thenlabs/pyramidal-tests/src/DSL/PHPUnit.php'; // DSL
 
 // ...
 ```

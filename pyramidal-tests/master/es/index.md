@@ -16,7 +16,7 @@ Su principal objetivo consiste en extender las aplicaciones de [PHPUnit](https:/
 
 ### Instalando con Composer.
 
-    $ composer require --dev thenlabs/pyramidal-tests dev-master
+    $ composer require --dev thenlabs/pyramidal-tests
 
 ### Declarando la extensión en el archivo de configuración.
 
@@ -36,7 +36,7 @@ En el archivo `bootstrap.php` o equivalente de su proyecto incluya una referenci
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/vendor/thenlabs/pyramidaltests/src/DSL/PHPUnit.php'; // DSL
+require_once __DIR__ . '/vendor/thenlabs/pyramidal-tests/src/DSL/PHPUnit.php'; // DSL
 
 // ...
 ```
