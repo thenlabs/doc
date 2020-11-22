@@ -1,10 +1,56 @@
 
-# StratusPHP
+# StratusPHP.
 
-<ol>
-    <li><a href="https://thenlabs.org/es/blog/video-para-dar-a-conocer-el-desarrollo-de-un-nuevo-framework.html">Video para dar a conocer el desarrollo de un nuevo framework.</a></li>
-    <li><a href="https://thenlabs.org/es/blog/stratusphp-comunicacion-por-streaming.html">StratusPHP. Comunicación por streaming.</a></li>
-    <li><a href="https://thenlabs.org/es/blog/publicado-el-codigo-fuente-de-stratusphp.html">Publicado el código fuente de StratusPHP.</a></li>
-    <li><a href="https://thenlabs.org/es/blog/tomando-contacto-con-stratusphp.html">Tomando contacto con StratusPHP.</a></li>
-    <li><a href="https://thenlabs.org/es/blog/stratus-php-y-el-desarrollo-de-aplicaciones-moviles-demo.html">StratusPHP y el desarrollo de aplicaciones móviles (Demo)</a></li>
-</ol>
+## 1. Instale StratusPHP.
+
+    $ composer require thenlabs/stratus-php 1.0.x-dev
+
+## 2. Cree un controlador que instancie la aplicación, la persista y devuelva la vista de la página.
+
+```php
+<?php
+// public/index.php
+
+require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/../src/App.php';
+
+use function Opis\Closure\serialize as s;
+
+// Creates the app instance specifying the url where will be processing the requests.
+$app = new App('/ajax.php');
+
+// persists the instance on the session(in this case).
+session_start();
+$_SESSION['app'] = s($app);
+
+// returns the view of the page.
+echo $app;
+```
+
+## 3. Cree el controlador que se encargará de procesar las solicitudes asíncronas.
+
+```php
+<?php
+// public/ajax.php
+
+require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/../src/App.php';
+
+use ThenLabs\StratusPHP\Request;
+use function Opis\Closure\{serialize as s, unserialize as u};
+
+// Gets the persisted app instance.
+session_start();
+$app = u($_SESSION['app']);
+
+// Do process the request.
+$request = Request::createFromJson($_REQUEST['stratus_request']);
+$result = $app->run($request);
+
+// If the processing was successful, persist the app again.
+if ($result->isSuccessful()) {
+    $_SESSION['app'] = s($app);
+}
+
+die();
+```
