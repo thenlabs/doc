@@ -1,4 +1,6 @@
 
+# Ejemplo 1.
+
 ## Introducción.
 
 Con este ejemplo se pretender mostrar que los elementos HTML que posean el atributo `s-element` podrán ser manipulados en tiempo real desde la clase PHP de la aplicación. Dichos elementos podrán ser referenciados en la clase con el nombre que se haya asignado como valor a dicho atributo.
