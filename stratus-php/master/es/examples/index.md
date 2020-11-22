@@ -1,2 +1,2 @@
 
-1. [Ejemplo 1](examples/1/example.md)
+1. [Ejemplo 1](1/example.md)
