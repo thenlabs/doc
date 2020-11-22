@@ -1,5 +1,5 @@
 
-# StratusPHP.
+# ¿Cómo usar StratusPHP?.
 
 ## 1. Instale StratusPHP.
 
@@ -57,4 +57,4 @@ die();
 
 ## 4. Cree la clase de su aplicación.
 
-Vea los ejemplos.
+[Ver ejemplos](examples/index.md)
