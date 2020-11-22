@@ -1,56 +1,11 @@
 
 # StratusPHP.
 
-## 1. Instale StratusPHP.
+## Introducción.
 
-    $ composer require thenlabs/stratus-php 1.0.x-dev
+StratusPHP es un framework que sirve para crear aplicaciones web de una sola página(SPA) empleando el paradigma de la programación dirigida por eventos entre el navegador y el servidor.
 
-## 2. Cree un controlador que instancie la aplicación, la persista y devuelva la vista de la página.
+Además de esto, StratusPHP puede ser interpretado de muchas otras maneras. Por ejemplo, se podría decir también que constituye una plataforma que integra el *frontend* y el *backend* lo cual permite a los usuarios centrarse en implementar más propiamente la lógica de sus aplicaciones ya que les evita el tener que implementar la comunicación entre ambos entornos ya sea con apis, llamadas ajax, etc.
 
-```php
-<?php
-// public/index.php
+StratusPHP se encargará de comunicar datos y eventos lo cual posibilitará que el usuario tenga que escribir menos código JavaScript ya que permite que PHP sea usado para manipular el DOM de la página. La principal ventaja que esto ofrece es justamente que puede ahorrar mucho trabajo ya que las validaciones son implementadas en el servidor solamente.
 
-require_once __DIR__.'/../vendor/autoload.php';
-require_once __DIR__.'/../src/App.php';
-
-use function Opis\Closure\serialize as s;
-
-// Creates the app instance specifying the url where will be processing the requests.
-$app = new App('/ajax.php');
-
-// persists the instance on the session(in this case).
-session_start();
-$_SESSION['app'] = s($app);
-
-// returns the view of the page.
-echo $app;
-```
-
-## 3. Cree el controlador que se encargará de procesar las solicitudes asíncronas.
-
-```php
-<?php
-// public/ajax.php
-
-require_once __DIR__.'/../vendor/autoload.php';
-require_once __DIR__.'/../src/App.php';
-
-use ThenLabs\StratusPHP\Request;
-use function Opis\Closure\{serialize as s, unserialize as u};
-
-// Gets the persisted app instance.
-session_start();
-$app = u($_SESSION['app']);
-
-// Do process the request.
-$request = Request::createFromJson($_REQUEST['stratus_request']);
-$result = $app->run($request);
-
-// If the processing was successful, persist the app again.
-if ($result->isSuccessful()) {
-    $_SESSION['app'] = s($app);
-}
-
-die();
-```
