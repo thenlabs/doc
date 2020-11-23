@@ -5,6 +5,8 @@
 
 Con este ejemplo lo que se pretende mostrar es que con los métodos `hasClass()`, `addClass()` y `removeClass()` es posible manipular las clases *css* de los elementos del DOM de la página.
 
+También queremos comentar que de manera similar, existen los métodos `hasAttribute()`, `setAttribute()` y `getAttribute()` para el caso de los atributos.
+
 ## Implementación.
 
 ```php
