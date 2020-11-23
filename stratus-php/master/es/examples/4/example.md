@@ -3,14 +3,13 @@
 
 ## Introducción.
 
-Con este ejemplo lo que se pretende mostrar es que StratusPHP envía mensajes al navegador por *streaming*, es decir, las actualizaciones de la vista se producen instantáneamente y no al final de la solicitud asíncrona.
-
-Puede verse que en el ciclo se produce una demora de 1 segundo y es en ese mismo intervalo cuando la etiqueta va actualizando su valor.
+Con este ejemplo lo que se pretende mostrar es que con el método `setStyle()` de los elementos es posible establecer las propiedades *css* de los elementos del DOM de la página.
 
 ## Implementación.
 
 ```php
 <?php
+// src/App.php
 
 use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
 
@@ -27,9 +26,14 @@ class App extends AbstractApp
                 <title>Document</title>
             </head>
             <body>
-                <input s-element="input" type="text">
-                <label s-element="label"></label>
-                <button s-element="button">Countdown</button>
+                <select s-element="select">
+                    <option>Select color</option>
+                    <option value="blue">blue</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                </select>
+                <label s-element="label">black</label>
+                <button s-element="button">Apply</button>
             </body>
             </html>
         HTML;
@@ -37,14 +41,10 @@ class App extends AbstractApp
 
     public function onClickButton(): void
     {
-        $start = (int) $this->myInput->value;
+        $color = $this->select->value;
 
-        for ($i = $start; $i > 0; $i--) {
-            $this->myLabel->textContent = $i;
-            sleep(1);
-        }
-
-        $this->myLabel->textContent = 'End';
+        $this->label->textContent = $color;
+        $this->label->setStyle('color', $color);
     }
 }
 ```
