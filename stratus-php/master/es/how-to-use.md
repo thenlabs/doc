@@ -1,11 +1,11 @@
 
 # ¿Cómo usar StratusPHP?.
 
-## Instale StratusPHP.
+**Instale StratusPHP.**
 
     $ composer require thenlabs/stratus-php 1.0.x-dev
 
-## Cree un controlador que instancie la aplicación, la persista y devuelva la vista de la página.
+**Cree un controlador que instancie la aplicación, la persista y devuelva la vista de la página.**
 
 ```php
 <?php
@@ -27,7 +27,7 @@ $_SESSION['app'] = s($app);
 echo $app;
 ```
 
-## Cree el controlador que se encargará de procesar las solicitudes asíncronas.
+**Cree el controlador que se encargará de procesar las solicitudes asíncronas.**
 
 ```php
 <?php
@@ -55,6 +55,6 @@ if ($result->isSuccessful()) {
 die();
 ```
 
-## Cree la clase de su aplicación.
+**Cree la clase de su aplicación.**
 
 [Ver ejemplos](examples/index.md)
