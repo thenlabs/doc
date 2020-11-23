@@ -16,7 +16,7 @@ use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
 
 class App extends AbstractApp
 {
-    public function getView(array $data = []): string
+    public function getView(): string
     {
         return <<<HTML
             <!DOCTYPE html>
@@ -37,7 +37,7 @@ class App extends AbstractApp
 
     public function clickOnTheButton(): void
     {
-        $this->myLabel->textContent = 'Hi ' . $this->myInput->value;
+        $this->myLabel->textContent = 'Hello ' . $this->myInput->value;
     }
 }
 ```
