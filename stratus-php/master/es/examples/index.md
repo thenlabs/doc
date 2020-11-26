@@ -7,3 +7,5 @@
 - [Ejemplo 4](4/example.md)
 - [Ejemplo 5](5/example.md)
 - [Ejemplo 6](6/example.md)
+- [Ejemplo 7](7/example.md)
+- [Ejemplo 8](8/example.md)
