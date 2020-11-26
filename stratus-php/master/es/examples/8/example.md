@@ -5,7 +5,7 @@
 
 Este ejemplo es muy similar al anterior y solo se pretende mostrar que también es posible especificar el código JavaScript del manejador de evento frontal en una función de la clase.
 
-Este manera puede ser más apropiada cuando el *script* tenga un tamaño considerable.
+Este manera puede ser más apropiada cuando el *script* tenga un tamaño considerable ya que como puede verse, cuando se usa la sintaxis HEREDOC(<<<JAVASCRIPT...JAVASCRIPT), muchos IDEs y editores de código mostrarán un resaltado de sintaxis.
 
 ## Implementación.
 
