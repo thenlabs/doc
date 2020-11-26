@@ -13,7 +13,6 @@ Con este ejemplo se quiere mostrar que con la función `querySelector()` es posi
 
 use ThenLabs\StratusPHP\Plugin\PageDom\Element;
 use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
-use ThenLabs\StratusPHP\Annotation\EventListener;
 
 class App extends AbstractApp
 {

@@ -18,7 +18,6 @@ Puede verse que cuando la página es cargada en el navegador, automáticamente s
 use ThenLabs\StratusPHP\FrontCall;
 use ThenLabs\StratusPHP\Plugin\PageDom\Element;
 use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
-use ThenLabs\StratusPHP\Annotation\EventListener;
 
 class App extends AbstractApp
 {
