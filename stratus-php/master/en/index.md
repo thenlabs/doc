@@ -14,7 +14,6 @@ In order to teach you how to use StratusPHP and quickly show all its possibiliti
 
 [See examples](examples/index.md)
 
-Si usted desea comenzar a usar StratusPHP utilice las siguiente guía.
 If you want start to use StratusPHP use the next guide:
 
 [How to use StratusPHP?](how-to-use.md)
