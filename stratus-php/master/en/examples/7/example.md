@@ -1,15 +1,15 @@
 
-# Ejemplo 7.
+# Example 7.
 
-## Introducción.
+## Introduction.
 
-Con este ejemplo lo que se pretende mostrar es que con el atributo `frontListener` de la anotación `ThenLabs\StratusPHP\Annotation\EventListener` es posible especificar un escuchador de evento en el navegador e incluso cancelar la ejecución del escuchador del servidor.
+With this example we pretends show that with the `frontListener` of the `ThenLabs\StratusPHP\Annotation\EventListener` annotation it is possible to specify an event listener in the browser, and even cancel the execution of the server listener.
 
-También es importante destacar que desde el código JavaScript es posible referirse a los elementos marcados con el atributo `s-element`. Además de esto, también se puede acceder a los datos del eventos que serán llevados al servidor e incluso modificarlos, y por último, hemos querido mostrar que es posible cancelar la ejecución del escuchador del servidor cuando se necesite.
+It is also important to note that from the JavaScript code it is possible to refer to the elements marked with the `s-element` attribute. In addition to this, you can also access the data of the events that will be taken to the server and even modify them, and finally, we wanted to show that it is possible to cancel the execution of the server listener when needed.
 
-En el ejemplo, solo se ejecuta el escuchador del navegador cuando se introduce en la caja de texto una letra minúscula.
+In the example, only the browser listener it is executed when it is introduced on the textbox a lower letter.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -58,6 +58,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)

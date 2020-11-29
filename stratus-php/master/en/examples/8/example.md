@@ -1,13 +1,13 @@
 
-# Ejemplo 8.
+# Example 8.
 
-## Introducción.
+## Introduction.
 
-Este ejemplo es muy similar al anterior y solo se pretende mostrar que también es posible especificar el código JavaScript del manejador de evento frontal en una función de la clase.
+This example is very similar to the previous one and is only intended to show that it is also possible to specify the JavaScript code of the front event handler in a function of the class.
 
-Este manera puede ser más apropiada cuando el *script* tenga un tamaño considerable ya que como puede verse, cuando se usa la sintaxis HEREDOC(<<<JAVASCRIPT...JAVASCRIPT), muchos IDEs y editores de código mostrarán un resaltado de sintaxis.
+This way may be more appropriate when the script is of considerable size since as can be seen, when using the HEREDOC syntax (<<<JAVASCRIPT...JAVASCRIPT), many IDEs and code editors will display syntax highlighting.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -61,6 +61,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)

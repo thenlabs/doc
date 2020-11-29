@@ -1,11 +1,13 @@
 
-# Ejemplo 9.
+# Example 9.
 
-## Introducción.
+## Introduction.
 
 Con este ejemplo se quiere mostrar que con la función `querySelector()` es posible obtener elementos que no posean el atributo `s-element`. Además de esto, se muestra la manera de añadir nuevos elementos de forma dinámica.
 
-## Implementación.
+With this example we want shows that with the `querySelector()` function it is possible obtain elements that not has the `s-element`s attribute. Also, it is shows the way to add new elements dinamically.
+
+## Implementation.
 
 ```php
 <?php
@@ -46,6 +48,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)
