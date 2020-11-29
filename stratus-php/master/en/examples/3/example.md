@@ -1,13 +1,13 @@
 
-# Ejemplo 3.
+# Example 3.
 
-## Introducción.
+## Introduction.
 
-Con este ejemplo lo que se pretende mostrar es que StratusPHP envía mensajes al navegador por *streaming*, es decir, las actualizaciones de la vista se producen instantáneamente y no al final de la solicitud asíncrona.
+With this example we pretends show that StratusPHP sends messages to the browser by streaming, that is, the updates of the view they are produced instantment and not at the end of the asynchronous request.
 
-Puede verse que en el ciclo se produce una demora de 1 segundo y es en ese mismo intervalo cuando la etiqueta va actualizando su valor.
+It may see that in the cicle it is produced one second delay and in the same interval the label updates his value.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -49,6 +49,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)
