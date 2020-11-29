@@ -1,11 +1,11 @@
 
-# Ejemplo 4.
+# Example 4.
 
-## Introducción.
+## Introduction.
 
-Con este ejemplo lo que se pretende mostrar es que con el método `setStyle()` de los elementos es posible establecer las propiedades *css* de los elementos del DOM de la página.
+With this example we pretends show that with the `setStyle()` method of the elements it's possible sets the CSS properties of the elements of the page DOM.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -49,6 +49,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)
