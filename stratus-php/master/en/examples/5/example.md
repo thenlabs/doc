@@ -1,13 +1,13 @@
 
-# Ejemplo 5.
+# Example 5.
 
-## Introducción.
+## Introduction.
 
-Con este ejemplo lo que se pretende mostrar es que con los métodos `hasClass()`, `addClass()` y `removeClass()` es posible manipular las clases *css* de los elementos del DOM de la página.
+With this example we pretends show that with the `hasClass()`, `addClass()` and `removeClass()` methods it's possible edit the CSS classes of the elements of the page DOM.
 
-También queremos comentar que de manera similar, existen los métodos `hasAttribute()`, `setAttribute()` y `getAttribute()` para el caso de los atributos.
+In addition, we want comments that in similay way, they exists the `hasAttribute()`, `setAttribute()` and `getAttribute()` methods for the attributes.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -52,6 +52,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)
