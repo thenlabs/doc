@@ -1,13 +1,13 @@
 
-# Ejemplo 6.
+# Example 6.
 
-## Introducción.
+## Introduction.
 
-Con este ejemplo lo que se pretende mostrar es que con la ayuda de la anotación `ThenLabs\StratusPHP\Annotation\EventListener` es posible especificar los datos del evento que se van a necesitar en el servidor.
+With this example we pretends show that with the help of the `ThenLabs\StratusPHP\Annotation\EventListener` it's possible specify the data of the event that will be need by the server.
 
-Cuando en el navegador, se introduce un caracter en el cuadro de texto, sobre este se producirá un evento del tipo `keypress` el cual contendrá(entre muchos otros) los datos `key` y `keyCode`. El ejemplo muestra la manera de especificar los datos del evento del navegador que se necesitarán en el servidor para el procesamiento de dicho evento.
+When in the browser, it's introduced a character on the textbox, on it will be produced an `keypress` event wich will contains the `key` and `keyCode` data. The example show the way to specify the event data of the browser that will be need in the server for processing that event.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -48,6 +48,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)
