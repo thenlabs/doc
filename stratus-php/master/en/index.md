@@ -1,10 +1,20 @@
 
 # StratusPHP.
 
-<ol>
-    <li><a href="https://thenlabs.org/en/blog/video-to-reveal-the-development-of-new-frameork.html">Video to reveal the development of new frameork.</a></li>
-    <li><a href="https://thenlabs.org/en/blog/stratus-php-communication-by-streaming.html">StratusPHP. Communication by streaming.</a></li>
-    <li><a href="https://thenlabs.org/en/blog/published-the-source-code-of-stratus-php.html">Published source code of StratusPHP</a></li>
-    <li><a href="https://thenlabs.org/en/blog/in-contact-with-stratus-php.html">In contact with StratusPHP.</a></li>
-    <li><a href="https://thenlabs.org/en/blog/stratusphp-and-the-development-of-mobile-applications-demo.html">StratusPHP and the development of mobile applications (Demo)</a></li>
-</ol>
+## Introducción.
+
+StratusPHP is a framework for creating single page web applications (SPA) using the paradigm of event-driven programming between the browser and the server.
+
+Besides this, StratusPHP can be interpreted in many other ways. For example, it could also be said that it constitutes a platform that integrates the * frontend * and the * backend * which allows users to focus on more properly implementing the logic of their applications since it avoids having to implement communication between both environments either with apis, ajax calls, etc.
+
+StratusPHP will take care of communicating data and events which will allow the user to have to write less JavaScript code since it will allow PHP to be used to manipulate the DOM of the page. The main advantage this offers is that it can just save a lot of work since the validations are implemented on the server only.
+
+
+In order to teach you how to use StratusPHP and quickly show all its possibilities in action, we have prepared a series of practical examples that you can find at the following link.
+
+[See examples](examples/index.md)
+
+Si usted desea comenzar a usar StratusPHP utilice las siguiente guía.
+If you want start to use StratusPHP use the next guide:
+
+[How to use StratusPHP?](how-to-use.md)
