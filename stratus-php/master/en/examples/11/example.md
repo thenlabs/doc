@@ -1,11 +1,11 @@
 
-# Ejemplo 11.
+# Example 11.
 
-## Introducción.
+## Introduction.
 
-Con este ejemplo se pretende mostrar que con las funciones `alert()`, `confirm()` y `prompt()` es posible mostrar y tomar información del navegador usando las equivalentes funciones nativas.
+With this example we pretends show that with the `alert()`, `confirm()` and `prompt()` functions it's possible show and get information from the browser using the equivalent native functions.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -54,6 +54,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)
