@@ -1,15 +1,15 @@
 
-# Ejemplo 10.
+# Example 10.
 
-## Introducción.
+## Introduction.
 
-Con este ejemplo se pretende mostrar la capacidad de StratusPHP de realizar llamadas al navegador en cualquier momento ya sea para obtener valores o solamente para realizar algo en el mismo.
+This example is intended to show the ability of StratusPHP to make calls to the browser at any time either to obtain values or just to do something in it.
 
-Puede verse que cuando la página es cargada en el navegador, automáticamente se crea un objeto de tipo `Date` en el objeto global `window`. Cuando ese botón es presionado, desde el servidor se hará una llamada al navegador para obtener dicho valor para posteriormente mostrarlo de manera formateada.
+It can be seen that when the page is loaded in the browser, an object of type `Date` is automatically created in the global object` window`. When this button is pressed, from the server a call will be made to the browser to obtain said value to later show it in a formatted way.
 
->Entendemos que esta característica puede crear algunas dudas respecto a su funcionamiento interno. El funcionamiento de StratusPHP será explicado totalmente en un capítulo de la documentación.
+>We understand that this feature may create doubts respect his internal functionment. The StratusPHP functionment will be totally explained in a chapter of the documentation.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -61,6 +61,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)

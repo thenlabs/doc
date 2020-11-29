@@ -1,13 +1,13 @@
 
 # Example 1.
 
-## Introducción.
+## Introduction.
 
 With this example we pretends show that the HTML elements that have the `s-element` attribute may will be manipulated in real time from the PHP class of the application.
 
 In addition to this, we want to highlight that the functions of the class whose name is of the type `on <event_name> <component_name>` will automatically be assigned as handlers of the respective component event. In the example you can see that the `onClickMyButton` function will handle the` click` event of the `myButton` component.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -43,6 +43,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)
