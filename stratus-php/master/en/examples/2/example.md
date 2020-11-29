@@ -1,13 +1,13 @@
 
-# Ejemplo 2.
+# Example 2.
 
-## Introducción.
+## Introduction.
 
-Este ejemplo es muy similar al anterior y lo que se pretende mostrar es que sobre los elementos que ya cuentan con el atributo `s-element`, es posible declarar eventos empleando el atributo de nombre `s-element-event-<nombre_evento>`.
+This example it's very similar to the before and it's pretends show is that on the elements that contains already the `s-element` attribute, it's possible declare events employing the attribute name `s-element-event-<event_name>`.
 
-En este caso se ha declarado que el evento clic del botón será manejado por la función `clickOnTheButton`.
+In this case it's declared that the click event of the button will be handled by the `clickOnTheButton` function.
 
-## Implementación.
+## Implementation.
 
 ```php
 <?php
@@ -42,6 +42,6 @@ class App extends AbstractApp
 }
 ```
 
-## Resultado.
+## Result.
 
 ![](result.gif)
