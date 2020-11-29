@@ -1,7 +1,7 @@
 
 # StratusPHP.
 
-## Introducción.
+## Introduction.
 
 StratusPHP is a framework for creating single page web applications (SPA) using the paradigm of event-driven programming between the browser and the server.
 
