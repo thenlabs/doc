@@ -44,10 +44,7 @@ class App extends AbstractApp
 
     public function onClickMyButton(): void
     {
-        $time = $this->executeFrontCall(new FrontCall(
-            "return window.myDate.getTime();",
-            true // indicate that script should returns a value.
-        ));
+        $time = $this->executeScript("return window.myDate.getTime();", true);
 
         $dt = new \DateTime;
         $dt->setTimestamp($time / 1000);
