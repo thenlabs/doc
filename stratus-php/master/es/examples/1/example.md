@@ -3,7 +3,7 @@
 
 ## Introducción.
 
-Con este ejemplo se pretender mostrar que los elementos HTML que posean el atributo `s-element` podrán ser manipulados en tiempo real desde la clase PHP de la aplicación. Dichos elementos podrán ser referenciados en la clase con el nombre que se haya asignado como valor a dicho atributo.
+Con este ejemplo se pretender mostrar que los elementos HTML que posean el atributo `s-element` podrán ser manipulados en tiempo real desde la clase PHP de la página. Dichos elementos podrán ser referenciados en la clase con el nombre que se haya asignado como valor a dicho atributo.
 
 Además de esto queremos destacar que las funciones de la clase cuyo nombre sean del tipo `on<nombre_de_evento><nombre_de_componente>` automáticamente serán asignadas como manejadoras del respectivo evento del componente. En el ejemplo puede verse que la función `onClickMyButton` manejará el evento `click` del componente `myButton`.
 
@@ -11,11 +11,11 @@ Además de esto queremos destacar que las funciones de la clase cuyo nombre sean
 
 ```php
 <?php
-// src/App.php
+// src/MyPage.php
 
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     public function getView(): string
     {
