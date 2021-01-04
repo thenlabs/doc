@@ -11,12 +11,12 @@ When in the browser, it's introduced a character on the textbox, on it will be p
 
 ```php
 <?php
-// src/App.php
+// src/MyPage.php
 
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 use ThenLabs\StratusPHP\Annotation\EventListener;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     public function getView(): string
     {
