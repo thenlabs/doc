@@ -11,10 +11,11 @@ It may see that in the cicle it is produced one second delay and in the same int
 
 ```php
 <?php
+// src/MyPage.php
 
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     public function getView(): string
     {
@@ -27,15 +28,15 @@ class App extends AbstractApp
                 <title>Document</title>
             </head>
             <body>
-                <input s-element="input" type="text">
-                <label s-element="label"></label>
-                <button s-element="button">Countdown</button>
+                <input s-element="myInput" type="text">
+                <label s-element="myLabel"></label>
+                <button s-element="myButton">Countdown</button>
             </body>
             </html>
         HTML;
     }
 
-    public function onClickButton(): void
+    public function onClickMyButton(): void
     {
         $start = (int) $this->myInput->value;
 
