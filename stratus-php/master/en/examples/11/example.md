@@ -9,11 +9,11 @@ With this example we pretends show that with the `alert()`, `confirm()` and `pro
 
 ```php
 <?php
-// src/App.php
+// src/MyPage.php
 
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     public function getView(): string
     {

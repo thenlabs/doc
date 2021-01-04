@@ -13,13 +13,13 @@ It can be seen that when the page is loaded in the browser, an object of type `D
 
 ```php
 <?php
-// src/App.php
+// src/MyPage.php
 
 use ThenLabs\StratusPHP\FrontCall;
 use ThenLabs\StratusPHP\Plugin\PageDom\Element;
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     public function getView(): string
     {
