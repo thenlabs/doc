@@ -11,11 +11,11 @@ In addition to this, we want to highlight that the functions of the class whose 
 
 ```php
 <?php
-// src/App.php
+// src/MyPage.php
 
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     public function getView(): string
     {
