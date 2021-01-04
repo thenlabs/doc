@@ -13,13 +13,13 @@ Puede verse que cuando la página es cargada en el navegador, automáticamente s
 
 ```php
 <?php
-// src/App.php
+// src/MyPage.php
 
 use ThenLabs\StratusPHP\FrontCall;
 use ThenLabs\StratusPHP\Plugin\PageDom\Element;
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     public function getView(): string
     {
