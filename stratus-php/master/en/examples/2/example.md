@@ -11,10 +11,11 @@ In this case it's declared that the click event of the button will be handled by
 
 ```php
 <?php
+// src/MyPage.php
 
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     public function getView(): string
     {
