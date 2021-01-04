@@ -11,12 +11,12 @@ With this example we want shows that with the `querySelector()` function it is p
 
 ```php
 <?php
-// src/App.php
+// src/MyPage.php
 
 use ThenLabs\StratusPHP\Plugin\PageDom\Element;
-use ThenLabs\StratusPHP\Plugin\SElements\AbstractApp;
+use ThenLabs\StratusPHP\Plugin\SElements\AbstractPage;
 
-class App extends AbstractApp
+class MyPage extends AbstractPage
 {
     protected $counter = 0;
 
