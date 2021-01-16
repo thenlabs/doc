@@ -3,7 +3,7 @@
 
 ## Introduction.
 
-StratusPHP is a framework for creating single page web applications (SPA) using the paradigm of event-driven programming between the browser and the server.
+StratusPHP is a framework for creating PHP applications that have reactive interfaces using the paradigm of event-driven programming between the browser and the server.
 
 Besides this, StratusPHP can be interpreted in many other ways. For example, it could also be said that it constitutes a platform that integrates the * frontend * and the * backend * which allows users to focus on more properly implementing the logic of their applications since it avoids having to implement communication between both environments either with apis, ajax calls, etc.
 
