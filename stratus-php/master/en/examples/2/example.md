@@ -46,3 +46,6 @@ class MyPage extends AbstractPage
 ## Result.
 
 ![](result.gif)
+
+<a class="float-left" href="../1/example.html">Back</a>
+<a class="float-right" href="../3/example.html">Next</a>
