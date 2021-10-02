@@ -258,6 +258,11 @@ testCase(function () {
 
 Además de las funciones `setUpBeforeClass()` y `tearDownAfterClass()`, existen también las funciones `setUpBeforeClassOnce()` y `tearDownAfterClassOnce()`. La diferencia que existen entre ambas está en que con las segundas solo se ejecutarán una única vez las respectivas funciones anónimas vinculadas.
 
+## Ejecutando PyramidalTests.
+
+Como se dijo anteriormente, para ejecutar las pruebas será necesario invocar el comando `./vendor/bin/pyramidal`. Este comando funciona prácticamente igual que el comando `./vendor/bin/phpunit` y solo tendrá algunas particularidades. Por ejemplo, cuando se desee ejecutar una o varias pruebas filtrándolas por su título se deberá ejecutar dicho comando de la siguiente manera:
+
+    $ ./vendor/bin/pyramidal --filter="my title"
 
 ## Configuraciones.
 
